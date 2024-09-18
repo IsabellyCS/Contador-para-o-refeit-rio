@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquete no Refeitório</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+    </style>
+    <header>
+        <h1>Opções do Dia!</h1> 
+    </header>
+</head>
+<body>
+    <div class="tudo">
+        <div class="cardapio">
+            <div class="comida">
+                <h2>Pão de Queijo</h2>
+                <button onclick="adicionar1()">Adicionar</button>
+                <button onclick="remover1()">Remover</button>
+                <button onclick="reiniciar1()">Reiniciar Contagem</button>
+            </div>
+            <div class="comida">
+                <h2>Pão com Manteiga</h2>
+                <button onclick="adicionar2()">Adicionar</button>
+                <button onclick="remover2()">Remover</button>
+                <button onclick="reiniciar2()">Reiniciar Contagem</button>
+            </div>
+        </div>
+
+        <div class="pedidos" id="pedidos">
+            <div>    
+                <h2 class="pedido1">
+                     <strong id="contador1">0</strong> é a quantidade de pão de queijo pedido até agora.
+                </h2>
+            </div>
+            <div>
+                <h2 class="pedido2">
+                    <strong id="contador2">0</strong> é a quantidade de pão com manteiga pedido até agora.
+            </div>
+        </div>
+    </div>
+    <button onclick="aplicar()">Aplicar</button>
+</body>
+<footer>
+    <div class="total">
+        <div class="div1">
+              <h2 class="total1">Quantidade Total de Pães de Queijo</h2>
+              <h2><strong id="total1">0</strong></h2>
+        </div>
+        <div class="div2">
+           <h2 class="total2">Quantidade Total de Pães com Manteiga</h2> 
+           <h2><strong id="total2">0</strong></h2>
+        </div>
+      
+        
+    </div>
+</footer>
+    <script src="script.js"></script>
+</html>
